@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Primary SEO -->
+  <title>Arvind Jat — Researcher & Founder of IBSAUD</title>
+  <meta name="description" content="Arvind Jat is an Information Systems researcher studying AI adoption and organisational change, and founder of IBSAUD — a youth-led global research initiative.">
+  <meta name="keywords" content="Arvind Jat, Information Systems, AI adoption, AI literacy, IBSAUD, researcher, Bhopal, India, digital transformation, HEX-AI framework">
+  <meta name="author" content="Arvind Jat">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://arvindjat.xyz/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arvindjat.xyz/">
+  <meta property="og:title" content="Arvind Jat — Researcher & Founder of IBSAUD">
+  <meta property="og:description" content="Information Systems researcher studying AI adoption and organisational change. Founder of IBSAUD.">
+  <meta property="og:image" content="https://arvindjat.xyz/og-image.png">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="Arvind Jat">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://arvindjat.xyz/">
+  <meta name="twitter:title" content="Arvind Jat — Researcher & Founder of IBSAUD">
+  <meta name="twitter:description" content="Information Systems researcher studying AI adoption and organisational change. Founder of IBSAUD.">
+  <meta name="twitter:image" content="https://arvindjat.xyz/og-image.png">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Arvind Jat",
+    "url": "https://arvindjat.xyz",
+    "email": "ct.arvindjat@gmail.com",
+    "jobTitle": "Researcher & Social Entrepreneur",
+    "description": "Information Systems researcher focused on AI adoption and organisational change. Founder of IBSAUD.",
+    "knowsAbout": ["AI Literacy", "AI Adoption", "Information Systems", "Digital Transformation", "Organisational Change"],
+    "sameAs": [
+      "https://www.linkedin.com/in/arvind-jat",
+      "https://github.com/ctarvindjat-lab",
+      "https://arvindjat.substack.com",
+      "https://contactibsaud.wixsite.com/ibsaud",
+      "https://x.com/ArvindJat20891"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "IBSAUD",
+      "url": "https://contactibsaud.wixsite.com/ibsaud"
+    },
+    "publication": {
+      "@type": "ScholarlyArticle",
+      "name": "Conceptualizing AI Literacy for Higher Education Learners and Implications for Institutes",
+      "url": "https://doi.org/10.35542/osf.io/2qhg5_v3",
+      "datePublished": "2026",
+      "author": { "@type": "Person", "name": "Arvind Jat" }
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <!-- Glacial Indifference via CDN -->
+  <style>
+    @font-face {
+      font-family: 'Glacial Indifference';
+      src: url('https://cdn.jsdelivr.net/gh/razorgag/cdn@latest/fonts/GlacialIndifference-Regular.otf') format('opentype');
+      font-weight: 400; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: 'Glacial Indifference';
+      src: url('https://cdn.jsdelivr.net/gh/razorgag/cdn@latest/fonts/GlacialIndifference-Bold.otf') format('opentype');
+      font-weight: 700; font-style: normal; font-display: swap;
+    }
+  </style>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0d0d0d;
+      --ink:       #e8e6e1;
+      --dim:       #5a5855;
+      --accent:    #1E1B4B;
+      --accent-light: #6366f1;
+      --display:   'Georgia', serif;
+      --body:      'Glacial Indifference', 'Helvetica Neue', sans-serif;
+      --hand:      'Architects Daughter', cursive;
+      --sub-bg:    #fdfdfd;
+      --sub-ink:   #141210;
+      --sub-dim:   #7a7672;
+      --sub-border:#e8e6e1;
+    }
+
+    html { font-size: 15px; }
+
+    body {
+      font-family: var(--body);
+      background: var(--bg);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      min-height: 100dvh;
+      padding: clamp(4rem, 10vw, 7rem) clamp(1.5rem, 9vw, 8rem);
+    }
+
+    .page { display: none; }
+    .page.active {
+      display: block;
+      animation: fadein .3s ease forwards;
+    }
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    a { color: var(--accent-light); text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+    #page-writing a, #page-library a { color: var(--accent); }
+    #page-writing a:hover, #page-library a:hover { color: var(--accent); }
+
+    /* ── SUBPAGES: white bg ── */
+    #page-writing,
+    #page-library {
+      background: var(--sub-bg);
+      color: var(--sub-ink);
+      margin: calc(-1 * clamp(4rem, 10vw, 7rem)) calc(-1 * clamp(1.5rem, 9vw, 8rem));
+      padding: clamp(4rem, 10vw, 7rem) clamp(1.5rem, 9vw, 8rem);
+      min-height: 100dvh;
+    }
+    #page-writing .back,
+    #page-library .back { color: var(--sub-dim); font-family: var(--hand); }
+    #page-writing .back:hover,
+    #page-library .back:hover { color: var(--accent); }
+    #page-writing .sub-title,
+    #page-library .sub-title { color: var(--sub-ink); }
+    #page-writing .reading-intro { color: var(--sub-dim); }
+    #page-writing .post-title { color: var(--sub-ink); }
+    #page-writing .post-sub,
+    #page-writing .post-meta { color: var(--sub-dim); }
+    #page-writing .post-item { border-color: var(--sub-border); }
+    #page-library .north-body p { color: var(--sub-ink); }
+    #page-library .book-list li { border-color: var(--sub-border); color: var(--sub-ink); }
+    #page-library .book-author { color: var(--sub-dim); }
+    #page-library .wip-label { color: var(--sub-dim) !important; font-family: var(--hand); }
+    #page-library p { color: var(--sub-dim); }
+    #page-library a { color: var(--accent); }
+
+    /* ── HOME ── */
+    .name {
+      font-family: var(--body);
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: .01em;
+      line-height: 1;
+      margin-bottom: 3.5rem;
+      color: var(--ink);
+    }
+
+    .content-blocks { max-width: 520px; }
+
+    .block { margin-bottom: 3.2rem; }
+
+    .block-label {
+      font-family: var(--hand);
+      font-size: .82rem;
+      letter-spacing: .02em;
+      color: var(--dim);
+      margin-bottom: 1rem;
+    }
+
+    .block p {
+      font-size: .88rem;
+      line-height: 1.82;
+      color: var(--ink);
+      font-family: var(--body);
+    }
+
+    /* citation block */
+    .paper {
+      margin-top: 1.4rem;
+      padding: 1rem 1.2rem;
+      border-left: 1px solid #2e2e2e;
+    }
+    .paper-title {
+      font-size: .88rem;
+      line-height: 1.6;
+      font-weight: 400;
+      margin-bottom: .4rem;
+      font-family: var(--body);
+    }
+    .paper-meta {
+      font-size: .74rem;
+      color: var(--dim);
+      margin-bottom: .5rem;
+      font-family: var(--hand);
+    }
+    .paper-links {
+      font-size: .74rem;
+      display: flex;
+      gap: .6rem;
+      align-items: center;
+      flex-wrap: wrap;
+      font-family: var(--hand);
+    }
+    .paper-links a { color: var(--dim); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #333; }
+    .paper-links a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+    .paper-links .sep { color: #333; }
+
+    /* in progress */
+    .wip { margin-top: 1.2rem; }
+    .wip-label {
+      font-family: var(--hand);
+      font-size: .8rem;
+      color: var(--dim);
+      margin-bottom: .5rem;
+    }
+    .wip-item {
+      font-size: .84rem;
+      color: var(--dim);
+      line-height: 1.7;
+      padding-left: 1rem;
+      position: relative;
+      font-family: var(--body);
+    }
+    .wip-item::before { content: '—'; position: absolute; left: 0; color: #333; }
+    .wip-item + .wip-item { margin-top: .3rem; }
+
+    /* project */
+    .project {
+      margin-top: 1rem;
+      font-size: .84rem;
+      line-height: 1.6;
+      font-family: var(--body);
+    }
+    .project-desc { color: var(--dim); }
+
+    /* humanized + footer */
+    .humanized {
+      margin-top: 3.5rem;
+      font-size: .92rem;
+      color: var(--dim);
+      font-family: var(--hand);
+      line-height: 1.8;
+    }
+    .humanized a {
+      color: var(--dim);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-color: #2e2e2e;
+      cursor: pointer;
+      font-family: var(--hand);
+    }
+    .humanized a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+
+    .foot-links {
+      margin-top: 3rem;
+      display: flex;
+      gap: .55rem;
+      flex-wrap: wrap;
+    }
+    .foot-links a {
+      width: 40px; height: 40px;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      color: #888;
+      transition: background .18s, border-color .18s, color .18s;
+      text-decoration: none;
+    }
+    .foot-links a:hover {
+      background: #1e2a3a;
+      border-color: var(--accent);
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .foot-links a svg { width: 16px; height: 16px; }
+
+    /* ── SUB PAGES ── */
+    .back {
+      display: inline-block;
+      font-family: var(--hand);
+      font-size: .8rem;
+      color: var(--dim);
+      margin-bottom: 3rem;
+      cursor: pointer;
+    }
+    .back:hover { color: var(--accent); }
+    .back::before { content: '← '; }
+
+    .sub-title {
+      font-family: var(--body);
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: .01em;
+      margin-bottom: 2.2rem;
+      line-height: 1.1;
+    }
+
+    .north-body { max-width: 500px; }
+    .north-body p {
+      font-size: .88rem;
+      line-height: 1.85;
+      color: var(--sub-ink);
+      margin-bottom: 1.4rem;
+      font-family: var(--body);
+    }
+    .north-body p:last-child { margin-bottom: 0; }
+
+    .reading-intro {
+      font-size: .84rem;
+      color: var(--sub-dim);
+      margin-bottom: 2rem;
+      max-width: 440px;
+      line-height: 1.7;
+      font-family: var(--hand);
+    }
+
+    .book-list { list-style: none; max-width: 460px; }
+    .book-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      padding: .9rem 0;
+      border-bottom: 1px solid var(--sub-border);
+      font-size: .88rem;
+      font-family: var(--body);
+    }
+    .book-list li:first-child { border-top: 1px solid var(--sub-border); }
+    .book-author { color: var(--sub-dim); white-space: nowrap; font-size: .78rem; font-family: var(--hand); }
+
+    /* expand boxes */
+    .expand-box {
+      margin-top: .9rem;
+      padding: 1rem 1.1rem;
+      background: #161616;
+      border: 1px solid #252525;
+      border-radius: 2px;
+      font-size: .82rem;
+      line-height: 1.75;
+      color: #aaa;
+      font-family: var(--body);
+    }
+    .expand-box pre {
+      font-family: 'Courier New', monospace;
+      font-size: .74rem;
+      white-space: pre-wrap;
+      word-break: break-all;
+      color: #888;
+      line-height: 1.7;
+    }
+
+    /* writing posts */
+    .post-item {
+      padding: 1.4rem 0;
+      border-bottom: 1px solid var(--sub-border);
+      max-width: 500px;
+    }
+    .post-item:first-of-type { border-top: 1px solid var(--sub-border); }
+    .post-title {
+      font-family: var(--body);
+      font-size: .95rem;
+      font-weight: 700;
+      color: var(--sub-ink);
+      display: block;
+      margin-bottom: .3rem;
+      text-decoration: none;
+      transition: color .15s;
+    }
+    .post-title:hover { color: var(--accent); text-decoration: none; }
+    .post-sub {
+      font-family: var(--hand);
+      font-size: .84rem;
+      color: var(--sub-dim);
+      line-height: 1.6;
+      margin-bottom: .4rem;
+    }
+    .post-meta {
+      font-family: var(--hand);
+      font-size: .76rem;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HOME -->
+  <div class="page active" id="page-home">
+    <h1 class="name">Arvind Jat</h1>
+
+    <div class="content-blocks">
+
+      <div class="block">
+        <p class="block-label">Research</p>
+        <p>I study how AI and digital technologies affect firm performance, productivity, and business strategy — with a focus on how organizations adopt and manage these technologies and what the consequences are for how they compete and operate.</p>
+        <div class="paper">
+          <p class="paper-title"><a href="https://doi.org/10.35542/osf.io/2qhg5_v3" target="_blank" rel="noopener">Conceptualizing AI Literacy for Higher Education Learners and Implications for Institutes</a></p>
+          <p class="paper-meta">Arvind Jat &nbsp;·&nbsp; SPARK 2026 (Presented)</p>
+          <div class="paper-links">
+            <a href="#" onclick="toggleBox('abstract-box'); return false;">Abstract</a>
+            <span class="sep">〳</span>
+            <a href="#" onclick="toggleBox('bibtex-box'); return false;">BibTeX</a>
+          </div>
+          <div id="abstract-box" class="expand-box" style="display:none;">
+            <p>The rapid growth of Artificial Intelligence tools has profoundly altered students' learning practices, epistemic judgment, cognitive ability, their academic engagement, and even influenced the world at systematic level. Despite widespread use, the conceptualization of AI literacy remains uneven, limiting higher education Institutes from adopting a concrete framework of AI literacy. This study addresses the fragmented conceptualization of AI literacy in the context of higher education learners through a systematic review of 13 recent key publications. Upon analysis, six recurrent aspects were identified: Mechanics, Ethics, Systemic, Psychological, Disciplinary application, and agency. Synthesizing these, this study proposes the HEX-AI literacy framework, an integrative model that captures the multifaceted nature of human-AI engagement. This paper further argues for tiered implications strategy for Institutes in higher education to adopt AI literacy, advocating that Institutes should develop generic, disciplinary, and systemic levels, while ensuring content to be contextual to learner's goals.</p>
+          </div>
+          <div id="bibtex-box" class="expand-box bibtex-box" style="display:none;"><pre>@article{jat2026hexai,
+  author    = {Jat, Arvind},
+  title     = {Conceptualizing {AI} Literacy for Higher Education
+               Learners and Implications for Institutes},
+  year      = {2026},
+  note      = {Presented at SPARK 2026},
+  doi       = {10.35542/osf.io/2qhg5_v3},
+  url       = {https://doi.org/10.35542/osf.io/2qhg5_v3},
+  publisher = {OSF Preprints}
+}</pre></div>
+        </div>
+        <div class="wip">
+          <p class="wip-label">In progress</p>
+          <p class="wip-item">AI governance &amp; adoption in a student-led volunteer initiative</p>
+          <p class="wip-item">Employee attitudes toward AI adoption in the workplace — exploratory qualitative study</p>
+        </div>
+      </div>
+
+      <div class="block">
+        <p class="block-label">Tech</p>
+        <p>Stepping into software this year. Projects live on <a href="https://github.com/arvind-jat" target="_blank" rel="noopener">GitHub</a>.</p>
+        <div class="project">
+          <a href="https://github.com/arvind-jat" target="_blank" rel="noopener">org-ai-audit</a>
+          <span class="project-desc"> — a tool for mapping AI adoption decisions in organizations</span>
+        </div>
+      </div>
+
+      <div class="block">
+        <p class="block-label">Initiative</p>
+        <p>Founder and Research Director of <a href="https://contactibsaud.wixsite.com/ibsaud" target="_blank" rel="noopener">IBSAUD</a> — a youth-led research and education initiative with contributors across four countries, building research capacity in places institutional science hasn't reached.</p>
+      </div>
+
+    </div>
+
+    <p class="humanized">
+      I read, and <a onclick="show('writing')">write</a>.
+      Building a <a onclick="show('library')">mini library</a>.
+    </p>
+
+    <nav class="foot-links" aria-label="External links">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/arvind-jat" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <!-- GitHub -->
+      <a href="https://github.com/arvind-jat" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+      </a>
+      <!-- Substack -->
+      <a href="https://arvindjat.substack.com" target="_blank" rel="noopener" aria-label="Substack">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+      </a>
+      <!-- IBSAUD -->
+      <a href="https://contactibsaud.wixsite.com/ibsaud" target="_blank" rel="noopener" aria-label="IBSAUD">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </a>
+    </nav>
+  </div>
+
+  <!-- WRITING -->
+  <div class="page" id="page-writing">
+    <a class="back" onclick="show('home')">Arvind Jat</a>
+    <h2 class="sub-title">Writing.</h2>
+    <p class="reading-intro">What I read, did, or figured out — weekly, mostly. Also on <a href="https://arvindjat.substack.com" target="_blank" rel="noopener">Substack</a>.</p>
+
+    <!-- ↓↓ ADD NEW POSTS HERE — copy one <div class="post-item"> block and paste above this line ↓↓ -->
+    <div class="post-item">
+      <a class="post-title" href="https://arvindjat.substack.com/p/summarising-6-theories-forentrepreneurse" target="_blank" rel="noopener">Summarizing 6 theories for entrepreneurs and founders</a>
+      <p class="post-sub">On the frameworks that actually explain why some ventures work and most don't.</p>
+      <p class="post-meta">Feb 27, 2026</p>
+    </div>
+    <!-- ↑↑ END OF POSTS ↑↑ -->
+  </div>
+
+  <!-- LIBRARY -->
+  <div class="page" id="page-library">
+    <a class="back" onclick="show('home')">Arvind Jat</a>
+    <h2 class="sub-title">Mini library.</h2>
+
+    <div class="north-body" style="margin-bottom: 2rem;">
+      <p>I remember when I was a kid and had asked Santa on Christmas for books — from all different subjects, around 20 of them. I never necessarily liked to read. But I liked just having books.</p>
+      <p>So I'm on a mission: collect and actually read 12 books by the end of this year.</p>
+    </div>
+
+    <p class="wip-label" style="margin-bottom:.7rem;">Read</p>
+    <ul class="book-list" style="margin-bottom: 1.8rem;">
+      <li><span>Sapiens</span><span class="book-author">Yuval Noah Harari</span></li>
+      <li><span>The Theory of Everything</span><span class="book-author">Stephen Hawking</span></li>
+      <li><span>Ceremony</span><span class="book-author">Brianna Wiest</span></li>
+    </ul>
+
+    <p class="wip-label" style="margin-bottom:.7rem;">Currently reading</p>
+    <ul class="book-list" style="margin-bottom: 1.8rem;">
+      <li><span>Meditations</span><span class="book-author">Marcus Aurelius</span></li>
+    </ul>
+
+    <p class="wip-label" style="margin-bottom:.7rem;">Genres</p>
+    <p style="font-size:.88rem; color: var(--dim); line-height: 1.7; max-width: 440px; margin-bottom: 1.8rem;">
+      Everything, really. Preferred: biographies, narrative non-fiction, and speculative ideas.
+    </p>
+
+    <p class="wip-label" style="margin-bottom:.55rem;">Suggest a book</p>
+    <p style="font-size:.88rem; color: var(--dim); line-height: 1.7; max-width: 440px;">
+      If you read something and loved it, I'd genuinely like to hear it. Email me: <a href="mailto:ct.arvindjat@gmail.com">ct.arvindjat@gmail.com</a>
+    </p>
+  </div>
+
+  <script>
+    function show(page) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById('page-' + page).classList.add('active');
+      window.scrollTo(0, 0);
+    }
+
+    function toggleBox(id) {
+      const box = document.getElementById(id);
+      const isOpen = box.style.display !== 'none';
+      document.querySelectorAll('.expand-box').forEach(b => b.style.display = 'none');
+      if (!isOpen) box.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
