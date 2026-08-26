@@ -73,10 +73,7 @@
       color: var(--ink);
       -webkit-font-smoothing: antialiased;
       display: flex;
-      align-items: center;
-      justify-content: center;
       min-height: 100dvh;
-      padding: clamp(.5rem, 2vw, 1.4rem);
     }
 
     a { color: var(--link); text-decoration: none; }
@@ -85,9 +82,7 @@
     .frame {
       position: relative;
       width: 100%;
-      max-width: 1180px;
-      height: min(760px, 94dvh);
-      border-radius: 14px;
+      height: 100dvh;
       background: var(--bg);
       display: flex;
       overflow: hidden;
@@ -196,8 +191,7 @@
     .subpage-view.active { display: flex; }
 
     @media (max-width: 760px) {
-      body { padding: 0; align-items: stretch; }
-      .frame { max-width: none; height: 100dvh; border-radius: 0; flex-direction: column; }
+      .frame { flex-direction: column; }
       .video-col { flex: 0 0 34%; }
       .content-col { flex: 1; }
       .body-wrap { margin-top: 1.6rem; }
