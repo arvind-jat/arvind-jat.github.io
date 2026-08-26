@@ -107,6 +107,10 @@
       overflow: hidden;
     }
 
+    /* page 1 only: video after content — right side on desktop (row), below on mobile (column) */
+    .frame[data-page="1"] .video-col { order: 2; }
+    .frame[data-page="1"] .content-col { order: 1; }
+
     .head-row { display: flex; align-items: center; justify-content: space-between; }
     .name-row { display: flex; align-items: center; gap: .7rem; }
     .name-bar { width: 3px; height: 20px; background: var(--accent); border-radius: 2px; flex: none; }
@@ -194,7 +198,6 @@
 
     @media (max-width: 760px) {
       .frame { flex-direction: column; height: 100dvh; }
-      .frame[data-page="1"] { flex-direction: column-reverse; }
       .video-col { flex: 0 0 22vh; min-height: 0; }
       .content-col { flex: 1 1 auto; min-height: 0; overflow: hidden; padding: 1.5rem 1.3rem; }
 
