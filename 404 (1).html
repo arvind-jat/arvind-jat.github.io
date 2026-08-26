@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Arvind Jat</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/jpeg" href="https://static.wixstatic.com/media/09e79b_e14424cdb24f4728bd202e25077b4745~mv2.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:     #020203;
+      --ink:    #f2f1f6;
+      --dim:    #8f8ca3;
+      --link:   #6f9bff;
+      --accent: #7c5cff;
+      --hand:   'Architects Daughter', cursive;
+      --sans:   'Inter', 'Helvetica Neue', sans-serif;
+    }
+
+    html, body { height: 100%; }
+    body {
+      font-family: var(--sans);
+      background: #000;
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      min-height: 100dvh;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .bg-video-wrap { position: fixed; inset: 0; z-index: 0; overflow: hidden; }
+    .bg-video-wrap video { width: 100%; height: 100%; object-fit: cover; filter: saturate(1.05) brightness(.5); }
+    .bg-video-wrap::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 45%, rgba(2,2,3,.55) 0%, rgba(2,2,3,.85) 60%, #020203 100%);
+    }
+
+    .card {
+      position: relative; z-index: 1;
+      text-align: center;
+      padding: 2rem;
+      max-width: 420px;
+    }
+
+    .name-row { display: flex; align-items: center; justify-content: center; gap: .6rem; margin-bottom: 2.2rem; }
+    .name-bar { width: 3px; height: 18px; background: var(--accent); border-radius: 2px; }
+    .name { font-size: 1rem; font-weight: 600; color: var(--dim); letter-spacing: -.005em; }
+
+    .code {
+      font-size: clamp(3.5rem, 12vw, 5.5rem);
+      font-weight: 700;
+      letter-spacing: -.02em;
+      line-height: 1;
+      color: var(--ink);
+    }
+
+    .msg {
+      margin-top: 1rem;
+      font-family: var(--hand);
+      font-size: .95rem;
+      color: var(--dim);
+      line-height: 1.7;
+    }
+
+    .home-link {
+      display: inline-block;
+      margin-top: 2.2rem;
+      font-size: .85rem;
+      color: var(--link);
+      text-decoration: none;
+      border: 1px solid rgba(111,155,255,.35);
+      border-radius: 999px;
+      padding: .55rem 1.4rem;
+      transition: background .18s, border-color .18s;
+    }
+    .home-link:hover { background: rgba(111,155,255,.1); border-color: var(--link); }
+  </style>
+</head>
+<body>
+
+  <div class="bg-video-wrap">
+    <video autoplay muted loop playsinline>
+      <source src="https://video.wixstatic.com/video/09e79b_b3a939b95e134a10be7f3270663b37b9/1080p/mp4/file.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="card">
+    <div class="name-row">
+      <span class="name-bar"></span>
+      <span class="name">Arvind Jat</span>
+    </div>
+    <p class="code">404</p>
+    <p class="msg">This page wandered off somewhere it shouldn't have.</p>
+    <a class="home-link" href="/">Back to the main page</a>
+  </div>
+
+</body>
+</html>
