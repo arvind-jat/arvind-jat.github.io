@@ -51,11 +51,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Alice&family=Architects+Daughter&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
+    @font-face {
+      font-family: 'Glacial Indifference';
+      src: url('https://cdn.jsdelivr.net/gh/razorgag/cdn@latest/fonts/GlacialIndifference-Regular.otf') format('opentype');
+      font-weight: 400; font-style: normal; font-display: swap;
+    }
+    @font-face {
+      font-family: 'Glacial Indifference';
+      src: url('https://cdn.jsdelivr.net/gh/razorgag/cdn@latest/fonts/GlacialIndifference-Bold.otf') format('opentype');
+      font-weight: 700; font-style: normal; font-display: swap;
+    }
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:        #020203;
-      --panel:     #060608;
+      --bg:        #0c100f;
+      --panel:     #0c100f;
       --ink:       #f2f1f6;
       --dim:       #8f8ca3;
       --link:      #6f9bff;
@@ -63,13 +74,13 @@
       --tan:       #c9a875;
       --border:    rgba(255,255,255,.08);
       --hand:      'Architects Daughter', cursive;
-      --sans:      'Inter', 'Helvetica Neue', sans-serif;
+      --sans:      'Glacial Indifference', 'Inter', 'Helvetica Neue', sans-serif;
     }
 
     html, body { height: 100%; }
     body {
       font-family: var(--sans);
-      background: #000;
+      background: #0c100f;
       color: var(--ink);
       -webkit-font-smoothing: antialiased;
       display: flex;
@@ -93,7 +104,7 @@
       flex: 0 0 42%;
       position: relative;
       overflow: hidden;
-      background: #000;
+      background: #0c100f;
     }
     .video-col video { width: 100%; height: 100%; object-fit: cover; display: block; }
 
@@ -108,8 +119,8 @@
     }
 
     /* page 1 only: video after content — right side on desktop (row), below on mobile (column) */
-    .frame[data-page="1"] .video-col { order: 2; }
-    .frame[data-page="1"] .content-col { order: 1; }
+    .video-col { order: 2; }
+    .content-col { order: 1; }
 
     .head-row { display: flex; align-items: center; justify-content: space-between; margin-top: clamp(.6rem, 2vw, 1.4rem); }
     .name-row { display: flex; align-items: center; gap: .7rem; }
@@ -248,7 +259,7 @@
   <div class="frame" id="frame">
     <div class="video-col">
       <video id="bgVideo" autoplay muted loop playsinline>
-        <source id="bgVideoSrc" src="https://video.wixstatic.com/video/09e79b_b3a939b95e134a10be7f3270663b37b9/1080p/mp4/file.mp4" type="video/mp4">
+        <source id="bgVideoSrc" src="https://video.wixstatic.com/video/09e79b_071498b6673547618ccea037986318a5/1080p/mp4/file.mp4" type="video/mp4">
       </video>
     </div>
 
@@ -412,8 +423,8 @@
     let cur = 1;
     const total = 3;
     const videoSrcs = {
-      1: 'https://video.wixstatic.com/video/09e79b_b3a939b95e134a10be7f3270663b37b9/1080p/mp4/file.mp4',
-      2: 'https://video.wixstatic.com/video/09e79b_b3a939b95e134a10be7f3270663b37b9/1080p/mp4/file.mp4',
+      1: 'https://video.wixstatic.com/video/09e79b_071498b6673547618ccea037986318a5/1080p/mp4/file.mp4',
+      2: 'https://video.wixstatic.com/video/09e79b_071498b6673547618ccea037986318a5/1080p/mp4/file.mp4',
       3: 'https://video.wixstatic.com/video/09e79b_071498b6673547618ccea037986318a5/1080p/mp4/file.mp4'
     };
     let curVideo = videoSrcs[1];
